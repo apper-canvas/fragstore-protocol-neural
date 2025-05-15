@@ -237,113 +237,6 @@ const Home = () => {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-    {/* Latest Products Section */}
-    <section id="latest" className="py-16 bg-surface-50 dark:bg-secondary-light">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold mb-4 dark:text-white">Latest Arrivals</h2>
-          <p className="text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-            Check out our newest CS2 merchandise, fresh from the battlegrounds and ready for true gamers
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Product 1 */}
-          <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-            <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
-              <img 
-                src="https://placehold.co/400x400/252935/FFFFFF/png?text=CS2+Pro+Keyboard" 
-                alt="CS2 Pro Gaming Keyboard" 
-                className="object-cover w-full h-60"
-              />
-              <div className="absolute top-2 right-2 bg-primary text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1 dark:text-white">CS2 Pro Gaming Keyboard</h3>
-              <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Tactile mechanical switches with custom CS2 keycaps</p>
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-lg dark:text-white">$129.99</span>
-                <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Product 2 */}
-          <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-            <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
-              <img 
-                src="https://placehold.co/400x400/252935/FFFFFF/png?text=Team+Jersey" 
-                alt="Limited Edition Team Jersey" 
-                className="object-cover w-full h-60"
-              />
-              <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">HOT</div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1 dark:text-white">Limited Edition Team Jersey</h3>
-              <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Official tournament design with player name customization</p>
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-lg dark:text-white">$89.99</span>
-                <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Product 3 */}
-          <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-            <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
-              <img 
-                src="https://placehold.co/400x400/252935/FFFFFF/png?text=Tactical+Mousepad" 
-                alt="Tactical Precision Mousepad" 
-                className="object-cover w-full h-60"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1 dark:text-white">Tactical Precision Mousepad</h3>
-              <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Extended size with CS2 map designs and stitched edges</p>
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-lg dark:text-white">$34.99</span>
-                <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Product 4 */}
-          <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-            <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
-              <img 
-                src="https://placehold.co/400x400/252935/FFFFFF/png?text=Weapon+Skin+Mug" 
-                alt="Weapon Skin Collection Mug" 
-                className="object-cover w-full h-60"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1 dark:text-white">Weapon Skin Collection Mug</h3>
-              <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Heat-activated skin reveal when filled with hot liquid</p>
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-lg dark:text-white">$24.99</span>
-                <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="text-center mt-12">
-          <button className="bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-lg inline-flex items-center">
-            View All Latest Products
-          </button>
-        </div>
-      </div>
-    </section>
-    
               transition={{ duration: 0.4, delay: 0.3 }}
               className="flex flex-col items-center rounded-xl bg-surface-50 p-6 text-center shadow-soft dark:bg-secondary"
             >
@@ -368,71 +261,6 @@ const Home = () => {
                 className="w-full rounded-xl border-0 bg-transparent px-5 py-4 focus:outline-none dark:text-white"
               />
               <button className="px-5 py-4 text-primary">
-    
-    {/* Contact Section */}
-    <section id="contact" className="py-16 bg-white dark:bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold mb-4 dark:text-white">Get In Touch</h2>
-          <p className="text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-            Have questions about our products or need gaming gear advice? We're here to help you dominate the CS2 battlegrounds.
-          </p>
-        </div>
-        
-        <div className="max-w-3xl mx-auto">
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="md:col-span-1">
-              <label htmlFor="name" className="block text-sm font-medium mb-2 dark:text-white">Your Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <div className="md:col-span-1">
-              <label htmlFor="email" className="block text-sm font-medium mb-2 dark:text-white">Email Address</label>
-              <input 
-                type="email" 
-                id="email" 
-                className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-            <div className="md:col-span-2">
-              <label htmlFor="subject" className="block text-sm font-medium mb-2 dark:text-white">Subject</label>
-              <input 
-                type="text" 
-                id="subject" 
-                className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
-                placeholder="How can we help you?"
-                required
-              />
-            </div>
-            <div className="md:col-span-2">
-              <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-white">Message</label>
-              <textarea 
-                id="message" 
-                rows="5" 
-                className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
-                placeholder="Tell us what you need..."
-                required
-              ></textarea>
-            </div>
-            <div className="md:col-span-2 text-center">
-              <button 
-                type="submit" 
-                className="bg-primary hover:bg-primary-dark text-white font-medium px-8 py-3 rounded-lg transition-colors"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
                 <SearchIcon className="h-5 w-5" />
               </button>
             </div>
@@ -627,6 +455,177 @@ const Home = () => {
             </div>
           </div>
         </div>
+      
+      {/* Latest Products Section */}
+      <section id="latest" className="py-16 bg-surface-50 dark:bg-secondary-light">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold mb-4 dark:text-white">Latest Arrivals</h2>
+            <p className="text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
+              Check out our newest CS2 merchandise, fresh from the battlegrounds and ready for true gamers
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Product 1 */}
+            <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
+                <img 
+                  src="https://placehold.co/400x400/252935/FFFFFF/png?text=CS2+Pro+Keyboard" 
+                  alt="CS2 Pro Gaming Keyboard" 
+                  className="object-cover w-full h-60"
+                />
+                <div className="absolute top-2 right-2 bg-primary text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1 dark:text-white">CS2 Pro Gaming Keyboard</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Tactile mechanical switches with custom CS2 keycaps</p>
+                <div className="flex justify-between items-center">
+                  <span className="font-bold text-lg dark:text-white">$129.99</span>
+                  <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Product 2 */}
+            <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
+                <img 
+                  src="https://placehold.co/400x400/252935/FFFFFF/png?text=Team+Jersey" 
+                  alt="Limited Edition Team Jersey" 
+                  className="object-cover w-full h-60"
+                />
+                <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">HOT</div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1 dark:text-white">Limited Edition Team Jersey</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Official tournament design with player name customization</p>
+                <div className="flex justify-between items-center">
+                  <span className="font-bold text-lg dark:text-white">$89.99</span>
+                  <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Product 3 */}
+            <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
+                <img 
+                  src="https://placehold.co/400x400/252935/FFFFFF/png?text=Tactical+Mousepad" 
+                  alt="Tactical Precision Mousepad" 
+                  className="object-cover w-full h-60"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1 dark:text-white">Tactical Precision Mousepad</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Extended size with CS2 map designs and stitched edges</p>
+                <div className="flex justify-between items-center">
+                  <span className="font-bold text-lg dark:text-white">$34.99</span>
+                  <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Product 4 */}
+            <div className="bg-white dark:bg-secondary rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="aspect-w-1 aspect-h-1 relative overflow-hidden bg-surface-100">
+                <img 
+                  src="https://placehold.co/400x400/252935/FFFFFF/png?text=Weapon+Skin+Mug" 
+                  alt="Weapon Skin Collection Mug" 
+                  className="object-cover w-full h-60"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1 dark:text-white">Weapon Skin Collection Mug</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">Heat-activated skin reveal when filled with hot liquid</p>
+                <div className="flex justify-between items-center">
+                  <span className="font-bold text-lg dark:text-white">$24.99</span>
+                  <button className="bg-primary hover:bg-primary-dark text-white px-3 py-1.5 rounded-lg text-sm font-medium">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <button className="bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-lg inline-flex items-center">
+              View All Latest Products
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-white dark:bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold mb-4 dark:text-white">Get In Touch</h2>
+            <p className="text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
+              Have questions about our products or need gaming gear advice? We're here to help you dominate the CS2 battlegrounds.
+            </p>
+          </div>
+          
+          <div className="max-w-3xl mx-auto">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="md:col-span-1">
+                <label htmlFor="name" className="block text-sm font-medium mb-2 dark:text-white">Your Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div className="md:col-span-1">
+                <label htmlFor="email" className="block text-sm font-medium mb-2 dark:text-white">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div className="md:col-span-2">
+                <label htmlFor="subject" className="block text-sm font-medium mb-2 dark:text-white">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
+                  placeholder="How can we help you?"
+                  required
+                />
+              </div>
+              <div className="md:col-span-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-white">Message</label>
+                <textarea 
+                  id="message" 
+                  rows="5" 
+                  className="w-full px-4 py-3 rounded-lg border border-surface-200 focus:border-primary focus:ring-1 focus:ring-primary dark:bg-secondary-light dark:border-surface-700 dark:text-white" 
+                  placeholder="Tell us what you need..."
+                  required
+                ></textarea>
+              </div>
+              <div className="md:col-span-2 text-center">
+                <button 
+                  type="submit" 
+                  className="bg-primary hover:bg-primary-dark text-white font-medium px-8 py-3 rounded-lg transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
       </section>
     </div>
   );
