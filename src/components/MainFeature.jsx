@@ -13,6 +13,7 @@ const MainFeature = () => {
   const ShoppingCartIcon = getIcon('ShoppingCart');
   const InfoIcon = getIcon('Info');
   const StarIcon = getIcon('Star');
+  const TruckIcon = getIcon('Truck');
   const ShieldIcon = getIcon('Shield');
   const ChevronRightIcon = getIcon('ChevronRight');
   const ChevronLeftIcon = getIcon('ChevronLeft');
